@@ -1,0 +1,117 @@
+         body{
+            height:740px;
+            background-color:rgb(237, 220, 184);
+            border: 5px rgba(13, 13, 55, 0.511) solid; 
+        }
+        .objects{
+            display:flex;
+            justify-content:center;
+            background-color: rgb(196, 241, 226);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom:5px;
+        }
+        .pic{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+            margin:0;
+        }
+        .grass, .deer, .tiger, .human{
+            height:170px;
+            width:170px;
+            margin-right:70px;
+            border-radius:50%;
+            border: 5px solid black;
+            padding:0px;
+        }
+        .grass:hover, .deer:hover, .tiger:hover, .human:hover{
+            cursor:pointer;
+            border-color:white;
+        }
+        .play{
+            display:grid;
+            grid-template-columns:1.5fr 1fr 1fr;
+            height:220px;
+            width:800px;
+            column-gap:50px;
+            margin-top:40px;
+            margin-left:120px;
+        }
+        .yourchoice{
+            display:grid;
+            height:100%;
+            grid-template-rows:1fr 7fr;
+            place-items:center;
+            border:3px rgb(0, 0, 0) solid;
+            border-radius:5px;
+            background-color:rgb(199, 247, 223);
+        }
+        .compchoice{
+            display:grid;
+            height:100%;
+            grid-template-rows:1fr 7fr;
+            place-items:center;
+            border:3px rgb(0, 0, 0) solid;
+            border-radius:5px;
+            background-color:rgb(246, 210, 246);
+        }
+        .yourpicc{
+            height:100%;
+            width:90%;
+            border-radius:50%;
+            border: 4px rgb(0, 0, 0) solid;
+            margin-left:4px;
+        }
+        .textt{
+            font-weight:bold;
+            font-size:17px;
+            font-family:Arial;
+        }
+        .para{
+            font-size:30px;
+            text-align:center;
+            margin-top:37px;
+            font-family:Montserrat;
+        }
+        .title{
+            font-size: 50px;
+            font-weight:bold;
+            font-family:Merienda;
+            text-align: center;
+            margin:0;
+            background-color: rgb(237, 255, 163);
+            /* text-decoration: underline wavy rgb(74, 62, 62); */
+        }
+        .rules{
+            font-size:30px;
+            text-align:center;
+            color:rgb(0, 0, 0);
+        }
+        .scoreBoard{
+            background-color: rgb(189, 219, 115);
+            height:100%;
+            display:grid;
+            grid-template-rows:1fr 1fr 1fr 1fr;
+            border:3px solid black;
+        }
+        .yourWins, .compWins, .draws{
+            margin:0;
+            margin-left:5px;
+            font-size:25px;
+            padding : 0;
+            font-family:Arial;
+        }
+        .scoreText{
+            margin:0;
+            margin-left:10px;
+            margin-top:5px;
+            font-size:30px;
+            padding : 0;
+            font-weight:bold;
+            font-family:Arial;
+            text-decoration: underline;
+        }
+        .results{
+            font-size:150px;
+        }

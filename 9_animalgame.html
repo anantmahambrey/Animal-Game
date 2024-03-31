@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Animal game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@700&family=Micro+5&family=Montserrat+Alternates:wght@300&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="animalgame.css">
+
+    </head>
+    <body>
+        <p class="title">~ UP THE FOOD CHAIN ~</p>
+        <p class="rules"><u>RULES:</u>  Pick one. If the computer chooses an animal that kills or eats your choice, you lose!
+        The first to score 10 points wins the game! Good Luck :)</p>
+
+        <div class = "objects">
+            <button class="grass" onclick="
+                chooseComputerMove();
+                chooseGrass();
+                displayScore();">
+                <img class="pic" src="imgs/grass.jpeg">
+            </button>
+
+            <button class="deer" onclick="
+            chooseComputerMove();
+            chooseDeer();
+            displayScore();">
+            <img class="pic" src="imgs/deer.jpg">
+            </button>
+
+            <button class="tiger" onclick="
+            chooseComputerMove();
+            chooseTiger();
+            displayScore();">
+            <img class="pic" src="imgs/tiger.jpg">
+            </button>
+
+            <button class="human" onclick="
+            chooseComputerMove();
+            chooseHuman();
+            displayScore();">
+            <img class="pic" src="imgs/hunter.jpeg">
+            </button>
+        </div>
+
+        <div class="play">
+            <div class="scoreBoard">
+                <p class="scoreText">SCORE</p>
+                <p class="yourWins">Your Score : 0</p>
+                <p class="compWins">Computer Score : 0</p>
+                <p class="draws">Draws : 0</p>
+            </div>
+            <div class="yourchoice">
+                <div class="textt">Your Choice</div>
+                <div class="yourpic"></div>
+            </div>
+            <div class="compchoice">
+                <div class="textt">Computer's Choice</div>
+                <div class="comppic"></div>
+            </div>
+        </div>
+        <p class="para"></p>
+
+        <script src="animalgame.js">
+        </script>
+        
+    </body>
+</html>
+
